@@ -1,8 +1,17 @@
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <style>
+      html, body {
+        overflow: hidden;
+        height: auto;
+      }
+    </style>
   </head>
   <body>
+    <img src="airplane.png" id="plane" style="position: relative; right: 1500px;">
     <div class="container"></div>
     <div id="controls">
       <button type="button" class="btn primary" data-action="newGame">New Game</button>
@@ -10,5 +19,6 @@
       <button type="button" class="btn primary" data-action="validate">Validate</button>
     </div>
     <script src="script.js"></script>
+    <script src="plane-loop.js"></script>
   </body>
 </html>
